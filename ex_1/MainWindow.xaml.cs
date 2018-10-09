@@ -23,6 +23,8 @@ namespace ex_1
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new AppMV();
         }
     }
 }

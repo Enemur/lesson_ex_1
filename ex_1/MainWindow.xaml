@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:ex_1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <TextBox DockPanel.Dock="Bottom" Text="{Binding TextBoxString}" Height="30"/>
+        <Button DockPanel.Dock="Bottom" Command="{Binding Path=SearchButtonClick}" Height="30" Content="Search" FontSize="20"/>
+        <ListView ItemsSource="{Binding CurrentFiles}"/>
+    </DockPanel>
 </Window>
