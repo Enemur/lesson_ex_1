@@ -16,7 +16,7 @@ namespace ex_1
 {
     public class AppMV : INotifyPropertyChanged
     {
-        public ObservableCollection<string> CurrentFiles;
+        public ObservableCollection<string> CurrentFiles { get; set; }
         private string _textBoxString;
         private FolderBrowserDialog _openDialog;
         private ICommand _searchButtonClick;
